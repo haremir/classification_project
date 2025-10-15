@@ -1,0 +1,77 @@
+###############################
+# Genel
+###############################
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.python-version
+
+###############################
+# IDE / Editör
+###############################
+.vscode/
+.idea/
+
+###############################
+# Python Derleme / Cache
+###############################
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+###############################
+# Sanal Ortamlar
+###############################
+venv/
+.venv/
+env/
+.env/
+
+###############################
+# Test & Coverage
+###############################
+.pytest_cache/
+.mypy_cache/
+.pylint.d/
+.coverage
+coverage.xml
+htmlcov/
+
+###############################
+# Paketleme / Dağıtım
+###############################
+build/
+dist/
+*.egg-info/
+
+###############################
+# Jupyter
+###############################
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+###############################
+# Proje Dizini Özel
+###############################
+# Ham ve işlenmiş veri ile büyük modelleri takip etme
+data/raw/
+data/processed/
+models/
+
+# İsteğe bağlı saklama dosyaları
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+
+# Rapor çıktıları (gerekirse dışla)
+reports/*.html
+reports/*.pdf
+reports/figures/
+
+# OS / Çeşitli
+*.tmp
+*.temp
+
