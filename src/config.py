@@ -10,7 +10,7 @@ REPORTS_DIR = BASE_DIR / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 
 # Veri dosyaları
-RAW_DATA_FILE = RAW_DATA_DIR / "phishing.arff"
+RAW_DATA_FILE = RAW_DATA_DIR / "Training Dataset.arff"
 TRAIN_DATA_FILE = PROCESSED_DATA_DIR / "train.csv"
 TEST_DATA_FILE = PROCESSED_DATA_DIR / "test.csv"
 
