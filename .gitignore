@@ -28,7 +28,6 @@ __pycache__/
 venv/
 .venv/
 env/
-.env/
 
 ###############################
 # Test & Coverage
@@ -61,7 +60,7 @@ data/raw/
 data/processed/
 models/
 
-# İsteğe bağlı saklama dosyaları
+# Klasörlerin silinmemesi için boş .gitkeep dosyaları tutulur
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !models/.gitkeep
@@ -71,7 +70,12 @@ reports/*.html
 reports/*.pdf
 reports/figures/
 
-# OS / Çeşitli
+# Rapor klasörlerinin silinmemesi için .gitkeep dosyaları
+!reports/.gitkeep
+!reports/figures/.gitkeep
+
+###############################
+# OS / Geçici Dosyalar
+###############################
 *.tmp
 *.temp
-
