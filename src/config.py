@@ -16,7 +16,9 @@ TEST_DATA_FILE = PROCESSED_DATA_DIR / "test.csv"
 
 # Model dosyaları
 RANDOM_FOREST_MODEL = MODELS_DIR / "random_forest.pkl"
-XGBOOST_MODEL = MODELS_DIR / "xgboost.pkl"
+DECISION_TREE_MODEL = MODELS_DIR / "decision_tree.pkl"
+GRADIENT_BOOSTING_MODEL = MODELS_DIR / "gradient_boosting.pkl"
+LOGISTIC_REGRESSION_MODEL = MODELS_DIR / "logistic_regression.pkl"
 BEST_MODEL = MODELS_DIR / "best_model.pkl"
 
 # Veri işleme parametreleri
@@ -70,13 +72,36 @@ RANDOM_FOREST_PARAMS = {
     'n_jobs': -1
 }
 
-XGBOOST_PARAMS = {
+DECISION_TREE_PARAMS = {
+    'max_depth': 20,
+    'min_samples_split': 5,
+    'min_samples_leaf': 2,
+    'random_state': RANDOM_STATE
+}
+
+GRADIENT_BOOSTING_PARAMS = {
     'n_estimators': 100,
-    'max_depth': 6,
     'learning_rate': 0.1,
+    'max_depth': 5,
+    'min_samples_split': 5,
+    'min_samples_leaf': 2,
+    'random_state': RANDOM_STATE
+}
+
+LOGISTIC_REGRESSION_PARAMS = {
+    'C': 1.0,
+    'penalty': 'l2',
+    'max_iter': 1000,
     'random_state': RANDOM_STATE,
     'n_jobs': -1
 }
+
+# Cross-validation parametreleri
+CV_FOLDS = 5
+CV_SCORING = 'f1_weighted'
+
+# Değerlendirme metrikleri
+EVALUATION_METRICS = ['accuracy', 'precision', 'recall', 'f1', 'roc_auc']
 
 # Görselleştirme ayarları
 FIGURE_SIZE = (10, 6)
