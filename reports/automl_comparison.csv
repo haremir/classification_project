@@ -1,0 +1,6 @@
+Model,F1-Score,Accuracy,ROC-AUC
+AutoGluon,0.9477413640389726,0.9495726495726495,0.9912260431048604
+Random Forest,0.0,0.0,0.0
+Decision Tree,0.0,0.0,0.0
+Gradient Boosting,0.0,0.0,0.0
+Logistic Regression,0.0,0.0,0.0
