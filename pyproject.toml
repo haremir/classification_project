@@ -16,5 +16,7 @@ dependencies = [
     "xgboost>=1.6.0",
     "scikit-plot>=0.3.7",
     "plotly>=5.0.0",
-    "optuna>=3.0.0"
+    "optuna>=3.0.0",
+    "flaml>=2.3.6",
+    "autogluon-tabular>=1.4.0",
 ]
